@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Добро пожаловать в сервисный центр!</h1>
+    <h4>Выберите устройство, с которым у вас возникли вопросы:</h4>
+
+    <button
+      id="phoneBtn"
+      class="button"
+    >
+      Телефон
+    </button>
+    <button
+      id="computerBtn"
+      class="button"
+    >
+      Компьютер
+    </button>
+    <button
+      id="smartwatchBtn"
+      class="button"
+    >
+      Умные часы
+    </button>
+
+    <div
+      id="searchContainer"
+      class="search-container"
+    >
+      <input
+        type="text"
+        id="problemInput"
+        placeholder="Опишите вашу проблему..."
+      />
+      <button
+        id="submitProblemBtn"
+        class="button"
+      >
+        Найти уточнения
+      </button>
+      <div
+        id="suggestionsContainer"
+        class="suggestions"
+      ></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
