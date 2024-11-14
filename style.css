@@ -1,9 +1,24 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
   padding: 20px;
-  background-color: #acc0d6;
+  background-color: #0a396b;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  height: 100vh; /* Высота на всю видимую область */
 }
+
+.main-container {
+  background-color: #ffffff; /* Голубой цвет фона контейнера */
+  border: 3px solid #000000; /* Рамка вокруг контейнера */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 20px; /* Внутренние отступы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+  width: 600px; /* Ширина контейнера */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
 .button {
   padding: 10px 20px;
   margin: 5px;
@@ -14,20 +29,32 @@ body {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+
 .button:hover {
   background-color: #0056b3;
 }
+
 .search-container {
   display: none;
   margin-top: 20px;
 }
+
+input[type="text"] {
+  padding: 15px; /* Увеличенный внутренний отступ */
+  width: calc(100% - 30px); /* Устанавливаем ширину с учётом отступов */
+  border: 1px solid #0d61bb; /* Рамка вокруг поля ввода */
+  border-radius: 7px; /* Закругленные углы */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
 .suggestions {
   margin-top: 20px;
   padding: 10px;
   background: #f9f9f9;
-  border: 1px solid #ccc;
+  border: 1px solid #0d61bb;
   border-radius: 5px;
 }
+
 .suggestion-button {
   display: block;
   margin: 5px 0;
@@ -37,6 +64,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .suggestion-button:hover {
   background-color: #e0e0e0;
 }
