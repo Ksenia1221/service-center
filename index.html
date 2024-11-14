@@ -9,47 +9,49 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Добро пожаловать в сервисный центр!</h1>
-    <h4>Выберите устройство, с которым у вас возникли вопросы:</h4>
+    <div class="main-container">
+      <h1>Добро пожаловать в сервисный центр!</h1>
+      <h4>Выберите устройство, с которым у вас возникли вопросы:</h4>
 
-    <button
-      id="phoneBtn"
-      class="button"
-    >
-      Телефон
-    </button>
-    <button
-      id="computerBtn"
-      class="button"
-    >
-      Компьютер
-    </button>
-    <button
-      id="smartwatchBtn"
-      class="button"
-    >
-      Умные часы
-    </button>
-
-    <div
-      id="searchContainer"
-      class="search-container"
-    >
-      <input
-        type="text"
-        id="problemInput"
-        placeholder="Опишите вашу проблему..."
-      />
       <button
-        id="submitProblemBtn"
+        id="phoneBtn"
         class="button"
       >
-        Найти уточнения
+        Телефон
       </button>
+      <button
+        id="computerBtn"
+        class="button"
+      >
+        Компьютер
+      </button>
+      <button
+        id="smartwatchBtn"
+        class="button"
+      >
+        Умные часы
+      </button>
+
       <div
-        id="suggestionsContainer"
-        class="suggestions"
-      ></div>
+        id="searchContainer"
+        class="search-container"
+      >
+        <input
+          type="text"
+          id="problemInput"
+          placeholder="Опишите вашу проблему..."
+        />
+        <button
+          id="submitProblemBtn"
+          class="button"
+        >
+          Найти
+        </button>
+        <div
+          id="suggestionsContainer"
+          class="suggestions"
+        ></div>
+      </div>
     </div>
 
     <script src="main.js"></script>
